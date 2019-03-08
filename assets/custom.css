@@ -1,0 +1,225 @@
+ .page {
+	  position: relative;
+	  width: 310mm;
+	  min-height: 793mm;
+	  padding: 0mm;
+	  margin: 10mm auto;
+	  /* border: 1px #D3D3D3 solid; */
+	  border-radius: 5px;
+	  background: white;
+	  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+ }
+ .subpage {
+	  padding: 1cm;
+	  border: 5px #ccc solid;
+	  height: 750mm;
+	  outline: 2cm whitesmoke solid;
+ }
+
+#datatable-paid-search > div > div > div.row.row-1 > div.cell.cell-1-0.dash-fixed-column {
+    flex: 0 0 auto;
+    left: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+#datatable-display > div > div > div.row.row-1 > div.cell.cell-1-0.dash-fixed-column {
+    flex: 0 0 auto;
+    left: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+#datatable-display-2 > div > div > div.row.row-1 > div.cell.cell-1-0.dash-fixed-column {
+    flex: 0 0 auto;
+    left: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+#datatable-publishing > div > div > div.row.row-1 > div.cell.cell-1-0.dash-fixed-column {
+    flex: 0 0 auto;
+    left: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+#datatable-publishing-2 > div > div > div.row.row-1 > div.cell.cell-1-0.dash-fixed-column {
+    flex: 0 0 auto;
+    left: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+#datatable-metasearch > div > div > div.row.row-1 > div.cell.cell-1-0.dash-fixed-column {
+    flex: 0 0 auto;
+    left: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+#datatable-ga-category > div > div > div.row.row-1 > div.cell.cell-1-0.dash-fixed-column {
+    flex: 0 0 auto;
+    left: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+#datatable-birst-category > div > div > div.row.row-1 > div.cell.cell-1-0.dash-fixed-column {
+    flex: 0 0 auto;
+    left: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+#datatable-birst-category-2 > div > div > div.row.row-1 > div.cell.cell-1-0.dash-fixed-column {
+    flex: 0 0 auto;
+    left: 0;
+    position: sticky;
+    z-index: 0;
+}
+
+/*#output-container-date-picker-range {
+	font-weight: bolder;
+	color: #3c3f40;
+    margin-top: 7px;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 2px;
+    caption-side: initial;
+    font-family: Raleway,HelveticaNeue,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}*/
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+button,
+.button {margin-top: 10px;
+  margin-bottom: 10px; }
+
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Customize the label (the container) */
+#container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+#container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+#checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+#container:hover input ~ #checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+#container input:checked ~ #checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+#checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+#container input:checked ~ #checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+#container #checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
