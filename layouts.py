@@ -5,17 +5,7 @@ from components import Header, print_button
 from datetime import datetime as dt
 from datetime import date, timedelta
 import pandas as pd
-# from app import app
-# import dash_auth
 
-# VALID_USERNAME_PASSWORD_PAIRS = [
-#     ['alg', 'beachlover']
-# ]
-
-# auth = dash_auth.BasicAuth(
-#     app,
-#     VALID_USERNAME_PASSWORD_PAIRS
-# )
 
 # Read in Travel Report Data
 df = pd.read_csv('data/performance_analytics_cost_and_ga_metrics.csv')
@@ -261,7 +251,7 @@ layout_ga_category =  html.Div([
             ], className=" twelve columns"),
         # GRAPHS
         html.Div([
-            html.Div(
+          html.Div(
             id='update_graph_1'
             ),
             html.Div([
@@ -283,7 +273,6 @@ layout_paid_search =  html.Div([
         html.Div([
             dcc.DatePickerRange(
               id='my-date-picker-range-paid-search',
-              # with_portal=True,
               min_date_allowed=dt(2018, 1, 1),
               max_date_allowed=df['Date'].max().to_pydatetime(),
               initial_visible_month=dt(current_year,df['Date'].max().to_pydatetime().month, 1),
@@ -346,7 +335,8 @@ layout_paid_search =  html.Div([
                       + [{'if': {'column_id': 'Revenue PoP (Abs)', 'filter': 'Revenue_PoP_abs_conditional < num(0)'}, 'color': 'red'}]
                       + [{'if': {'column_id': 'Revenue YoY (Abs)', 'filter': 'Revenue_YoY_abs_conditional < num(0)'}, 'color': 'red'}]
                       + [{'if': {'column_id': 'Revenue PoP (%)', 'filter': 'Revenue_PoP_percent_conditional < num(0)'}, 'color': 'red'}]
-                      + [{'if': {'column_id': 'Revenue YoY (%)', 'filter': 'Revenue_YoY_percent_conditional < num(0)'}, 'color': 'red'}]
+                      + [{'if': {'column_id': 'Revenue YoY (%)', 'filter': 'Revenue_YoY_percent_conditional < num(0)'}, 'color': 'red'}],
+                      style_header={'backgroundColor': 'black','color': 'white'},
                 ),
             ], className=" twelve columns"),
         # Download Button
@@ -384,8 +374,9 @@ layout_paid_search =  html.Div([
                 + [{'if': {'column_id': 'CPA PoP (Abs)', 'filter': 'CPA_PoP_abs_conditional < num(0)'}, 'color': 'red'}]
                 + [{'if': {'column_id': 'CPA PoP (%)', 'filter': 'CPA_PoP_percent_conditional < num(0)'}, 'color': 'red'}]
                 + [{'if': {'column_id': 'CPA YoY (Abs)', 'filter': 'CPA_YoY_abs_conditional < num(0)'}, 'color': 'red'}]
-                + [{'if': {'column_id': 'CPA YoY (%)', 'filter': 'CPA_YoY_percent_conditional < num(0)'}, 'color': 'red'}]         
-                      ),
+                + [{'if': {'column_id': 'CPA YoY (%)', 'filter': 'CPA_YoY_percent_conditional < num(0)'}, 'color': 'red'}],
+                style_header={'backgroundColor': 'black','color': 'white'},       
+                ),
             ], className=" twelve columns"),
         # GRAPHS
         html.Div([
