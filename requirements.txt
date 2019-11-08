@@ -32,7 +32,7 @@ jupyter-nbextensions-configurator==0.2.3
 MarkupSafe==1.1.0
 nbconvert==5.1.1
 nbformat==4.4.0
-notebook==4.4.1
+notebook==5.7.8
 numpy==1.16.1
 packaging==16.8
 pandas==0.24.1
