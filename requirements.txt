@@ -39,7 +39,7 @@ pandas==0.24.1
 pandocfilters==1.4.1
 plotly==3.6.0
 pycparser==2.19
-Pygments==2.2.0
+Pygments==2.7.4
 pyOpenSSL==19.0.0
 pyparsing==2.1.10
 PySocks==1.6.8
