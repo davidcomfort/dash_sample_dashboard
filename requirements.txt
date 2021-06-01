@@ -51,6 +51,6 @@ six==1.12.0
 testpath==0.3
 traitlets==4.3.2
 ua-parser==0.8.0
-urllib3==1.24.1
+urllib3==1.26.5
 Werkzeug==0.14.1
 XlsxWriter==1.1.4
