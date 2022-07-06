@@ -18,7 +18,7 @@ Flask==1.0.2
 Flask-Compress==1.4.0
 Flask-SeaSurf==0.2.2
 gunicorn==19.9.0
-html5lib==0.9999999
+html5lib==0.999999999
 idna==2.8
 ipython-genutils==0.2.0
 itsdangerous==1.1.0
