@@ -30,7 +30,7 @@ jupyter-highlight-selected-word==0.0.8
 jupyter-latex-envs==1.3.7.1
 jupyter-nbextensions-configurator==0.2.3
 MarkupSafe==1.1.0
-nbconvert==5.1.1
+nbconvert==6.3.0
 nbformat==4.4.0
 notebook==4.4.1
 numpy==1.16.1
